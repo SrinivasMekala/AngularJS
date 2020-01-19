@@ -1,0 +1,24 @@
+<html>
+   
+   <head>
+      <title>AngularJS Expressions</title>
+   </head>
+   
+   <body>
+      <h1>Sample Application</h1>
+      
+      <div ng-app = "" ng-init = "quantity = 1;cost = 30; student = {firstname:'Mahesh',lastname:'Parashar',rollno:111};student1 = {firstname:'Srini',lastname:'Mekala',rollno:101};marks = [80,90,75,73,60];marks1 = [180,190,175,173,160]">
+         <p>First Sutdent :  {{student.firstname + " " + student.lastname}}!</p>
+         <p>Expense on Books : {{cost * quantity}} Rs</p>
+         <p>Roll No: {{student.rollno}}</p>
+         <p>Marks(Math): {{marks[3]}}</p>
+		 <p>Second Student : {{student1.firstname + " " + student1.lastname}}!</p>
+         <p>Expense on Books : {{cost* cost * quantity}} Rs</p>
+         <p>Roll No: {{student1.rollno}}</p>
+         <p>Marks(Math): {{marks1[3]}}</p>
+      </div>
+      
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      
+   </body>
+</html>
